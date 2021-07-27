@@ -119,7 +119,7 @@ font-3 = "Bitstream Vera Sans:style=Roman:size=15;4"
 
 modules-left = jgmenu bspwm
 modules-center = cpu-graph mpd
-modules-right =  discord volume memory1 filesystem arch-aur-updates battery date  weather powermenu
+modules-right =  discord volume memory1 filesystem arch-aur-updates battery date  weather 
 
 tray-detached = false
 tray-offset-x = 0
@@ -166,23 +166,23 @@ ws-icon-default = " "
 
 format = <label-state>
 
-label-focused = 
+;label-focused = 
 label-focused-background = ${colors.background}
 label-focused-padding = 2
 label-focused-foreground =  ${colors.third}
 
-label-occupied = 
+;label-occupied = 
 label-occupied-padding = 2
 label-occupied-foreground =  ${colors.foreground}
 label-occupied-background = ${colors.background}
 
-label-urgent = 
+;label-urgent = 
 label-urgent-padding = 2
 label-urgent-foreground = ${colors.alert}
 label-urgent-background = ${colors.background}
 label-urgent-underline = ${colors.alert}
 
-label-empty = 
+;label-empty = 
 label-empty-foreground = ${colors.foreground}
 label-empty-padding = 2
 label-empty-background = ${colors.background}
@@ -448,7 +448,7 @@ format-prefix = "  "
 [module/jgmenu]
 type = custom/script
 interval = 120
-exec = echo "FairyOS"
+exec = echo ""
 click-left = "jgmenu_run >/dev/null 2>&1 &"
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}

@@ -448,7 +448,11 @@ format-prefix = "  "
 [module/jgmenu]
 type = custom/script
 interval = 120
+<<<<<<< HEAD
 exec = echo ""
+=======
+exec = echo "ArcoLinux"
+>>>>>>> 149b9b6b1700c75b2b2325960b78905c6a87ad87
 click-left = "jgmenu_run >/dev/null 2>&1 &"
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}

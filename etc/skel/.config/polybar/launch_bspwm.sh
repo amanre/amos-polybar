@@ -16,10 +16,10 @@ case $desktop in
     bspwm|/usr/share/xsessions/bspwm)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload mainbar-bspwm -c ~/.config/polybar/config_dt &
+        MONITOR=$m polybar --reload mainbar-bspwm -c ~/.config/polybar/config_top_border &
       done
     else
-    polybar --reload mainbar-bspwm -c ~/.config/polybar/config_dt &
+    polybar --reload mainbar-bspwm -c ~/.config/polybar/config_top_border &
     fi
     # second polybar at bottom
     # if type "xrandr" > /dev/null; then

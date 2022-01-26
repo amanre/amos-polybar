@@ -119,7 +119,7 @@ font-3 = "Bitstream Vera Sans:style=Roman:size=15;4"
 
 modules-left = jgmenu bspwm
 modules-center = cpu-graph mpd
-modules-right =  discord volume memory1 filesystem arch-aur-updates battery date  weather 
+modules-right =  discord volume memory1 filesystem arch-aur-updates battery date  weather powermenu
 
 tray-detached = false
 tray-offset-x = 0
@@ -847,40 +847,54 @@ format-background = ${colors.background}
 ###############################################################################
 
 [module/powermenu]
-;type = custom/script
-;exec = echo ""
-;;exec = echo " "
-;interval = 1
-;tail = true
-;format-foreground = ${colors.foreground}
-;format-background = ${colors.background}
-;format-prefix-foreground = #738adb
-;format-underline = ${colors.foreground-alt}
-;click-left = arcologout &
-;label = %output%
-
-[module/powermenu]
 type = custom/menu
 
-format-spacing = 1
+; If true, <label-toggle> will be to the left of the menu items (default).
+; If false, it will be on the right of all the items.
+expand-right = true
 
-label-open = 
-label-close = 
-label-close-foreground = ${colors.foreground}
-label-separator = |
-label-separator-foreground = ${colors.foreground}
+; "menu-LEVEL-N" has the same properties as "label-NAME" with
+; the additional "exec" property
+;
+; Available exec commands:
+;   menu-open-LEVEL
+;   menu-close
+; Other commands will be executed using "/usr/bin/env sh -c $COMMAND"
+menu-0-0 = " Reboot |"
+menu-0-0-exec = menu-open-1
+menu-0-1 = " Shutdown "
+menu-0-1-exec = menu-open-2
 
-menu-0-0 = 
-menu-0-0-exec = betterlockscreen -l dimblur && sleep 1
-menu-0-1 = 
-menu-0-1-exec = systemctl reboot
-menu-0-2 = 
-menu-0-2-exec = betterlockscreen -l dimblur && sleep 1 && systemctl suspend
-menu-0-3 = 
-menu-0-3-exec = systemctl poweroff
+menu-1-0 = " Back |"
+menu-1-0-exec = menu-open-0
+menu-1-1 = " Reboot "
+menu-1-1-exec = systemctl reboot
 
+menu-2-0 = " Shutdown |"
+menu-2-0-exec = systemctl poweroff
+menu-2-1 = " Back "
+menu-2-1-exec = menu-open-0
 
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
-;format-underline = ${colors.foreground-alt}
-format-padding = 1
+; Available tags:
+;   <label-toggle> (default) - gets replaced with <label-(open|close)>
+;   <menu> (default)
+; Note that if you use <label-toggle> you must also include
+; the definition for <label-open>
+
+format = <label-toggle><menu>
+
+label-open = 
+label-open-foreground = ${color.cyan}
+label-open-padding = 1
+label-close =  
+label-close-foreground = ${color.red}
+label-close-padding = 1
+
+; Optional item separator
+; Default: none
+;label-separator = " | "
+;label-separator-foreground = ${color.foreground}
+;label-separator-background = ${color.background-alt}
+
+;;label-open-foreground = ${color.foreground}
+;;label-close-foreground = ${color.background}

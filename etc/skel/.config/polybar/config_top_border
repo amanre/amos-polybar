@@ -32,8 +32,8 @@ compositing-underline = over
 compositing-border = over
 
 ; Define fallback values used by all module formats
-format-foreground = #FF0000
-format-background = #00FF00
+#format-foreground = #FF0000
+#format-background = #00FF00
 format-underline =
 format-overline =
 format-spacing =
@@ -848,7 +848,7 @@ format-background = ${colors.background}
 
 [module/sysmenu]
 type = custom/text
-content = "  "
+content = "  "
 content-foreground = ${color.foreground}
 click-left = archlinux-logout
 click-right = archlinux-logout

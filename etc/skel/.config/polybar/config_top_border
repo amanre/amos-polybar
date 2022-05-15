@@ -117,7 +117,7 @@ font-2 = "Noto Sans Mono:size=15;4"
 font-3 = "Bitstream Vera Sans:style=Roman:size=15;4"
 
 
-modules-left = jgmenu ewmh
+modules-left = jgmenu wall ewmh
 modules-center = cpu-graph mpd
 modules-right =  discord volume memory1 filesystem arch-aur-updates battery date  weather sysmenu
 
@@ -852,3 +852,16 @@ content = "  "
 content-foreground = ${color.foreground}
 click-left = archlinux-logout
 click-right = archlinux-logout
+
+
+[module/wall]
+type = custom/text
+content = PW
+content-padding = 1%
+content-background = ${color.background}
+content-foreground = ${color.foreground}
+click-left = ~/.config/bspwm/scripts/wal.sh
+click-right = ~/.config/bspwm/scripts/wal.sh
+;format-underline = #3EC13F
+format-foreground = ${color.foreground}
+format-background = ${color.background}

@@ -117,7 +117,7 @@ font-2 = "Noto Sans Mono:size=15;4"
 font-3 = "Bitstream Vera Sans:style=Roman:size=15;4"
 
 
-modules-left = jgmenu wall ewmh
+modules-left = jgmenu wall browser email files settings screenshot term ewmh
 modules-center = cpu-graph mpd
 modules-right =  discord volume memory1 filesystem arch-aur-updates battery date  weather sysmenu
 
@@ -854,7 +854,6 @@ content-foreground = ${color.foreground}
 click-left = archlinux-logout
 click-right = archlinux-logout
 
-##############################################################################
 
 [module/wall]
 type = custom/text
@@ -868,4 +867,48 @@ click-right = ~/.config/bspwm/scripts/amos-wal.sh
 format-foreground = ${color.foreground}
 format-background = ${color.background}
 
-###############################################################################
+[module/apps]
+type = custom/text
+;content-foreground = ${color.foreground}
+;content-padding = 1
+
+[module/browser]
+inherit = module/apps
+content = 
+content-foreground = ${color.orange}
+click-left = opera &
+click-right = firefox &
+
+[module/email]
+inherit = module/apps
+content = 
+content-foreground = ${color.orange}
+click-left = thunderbird &
+
+[module/files]
+inherit = module/apps
+content = 
+content-foreground = ${color.blue}
+click-left = thunar &
+click-right = urxvt -e ranger &
+
+[module/settings]
+inherit = module/apps
+content = 
+content-foreground = ${color.teal}
+click-left = xfce4-settings-manager &
+click-right = lxappearance &
+
+[module/screenshot]
+inherit = module/apps
+content = 
+click-left = flameshot gui &
+;; click-right = gnome-screenshot -i &
+click-right = xfce4-screenshooter &
+
+[module/term]
+inherit = module/apps
+content = 
+content-foreground = ${color.blue-gray}
+click-left = alacritty &
+click-right = xfce4-terminal &

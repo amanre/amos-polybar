@@ -97,7 +97,7 @@ override-redirect = true
 ; See the Messaging wiki page for more details.
 enable-ipc = true
 
-border-size = 3
+border-size = 1
 ;border-left-size = 0
 ;border-right-size = 0
 ;border-top-size = 0
@@ -450,6 +450,7 @@ type = custom/script
 interval = 120
 exec = echo " EOS"
 click-left = "jgmenu_run >/dev/null 2>&1 &"
+click-right = "xfce4-appfinder &"
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -853,6 +854,7 @@ content-foreground = ${color.foreground}
 click-left = archlinux-logout
 click-right = archlinux-logout
 
+##############################################################################
 
 [module/wall]
 type = custom/text
@@ -861,7 +863,9 @@ content-padding = 1%
 content-background = ${color.background}
 content-foreground = ${color.foreground}
 click-left = ~/.config/bspwm/scripts/wal.sh
-click-right = ~/.config/bspwm/scripts/wal.sh
+click-right = ~/.config/bspwm/scripts/amos-wal.sh
 ;format-underline = #3EC13F
 format-foreground = ${color.foreground}
 format-background = ${color.background}
+
+###############################################################################

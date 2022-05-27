@@ -45,9 +45,9 @@ format-offset =
 ; Nord theme ============
 background = ${xrdb:color0:#222}
 ;background = #312438
-foreground = ${xrdb:color7:#222}
-foreground-alt = ${xrdb:color4:#222}
-primary = ${xrdb:color2:#222}
+foreground = ${xrdb:color2:#222}
+foreground-alt = ${xrdb:color9:#222}
+primary = ${xrdb:color3:#222}
 secondary = ${xrdb:color8:#222}
 third = ${xrdb:color2:#222}
 adapta-red = #FF5252
@@ -75,9 +75,9 @@ volume-max = #bf616a
 [bar/mainbar-bspwm]
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI-1
-width = 100%
+width = 99%
 height = 30
-offset-x = 0
+offset-x = 10
 offset-y = 10
 radius =15
 fixed-center = true
@@ -121,14 +121,14 @@ modules-left = jgmenu wall browser email files settings screenshot term ewmh
 modules-center = cpu-graph mpd
 modules-right =  discord volume memory1 filesystem arch-aur-updates battery date  weather sysmenu
 
-tray-detached = false
-tray-offset-x = 0
-tray-offset-y = 0
-tray-padding = 2
-tray-maxsize = 20
-tray-scale = 1.0
-tray-position = right
-tray-background = ${colors.background}
+;tray-detached = false
+;tray-offset-x = 0
+;tray-offset-y = 0
+;tray-padding = 2
+;tray-maxsize = 20
+;tray-scale = 1.0
+;tray-position = right
+;tray-background = ${colors.background}
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev

@@ -76,12 +76,12 @@ volume-max = #bf616a
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI-1
 width = 100%
-height = 24
+height = 30
 offset-x = 0
-offset-y = 0
-radius = 0
+offset-y = 10
+radius =15
 fixed-center = true
-bottom = false
+bottom = true
 separator =
 
 background = ${colors.background}
@@ -97,12 +97,12 @@ override-redirect = true
 ; See the Messaging wiki page for more details.
 enable-ipc = true
 
-border-size = 1
+border-size = 3
 ;border-left-size = 0
 ;border-right-size = 0
 ;border-top-size = 0
 ;border-bottom-size = 25
-border-color = ${xrdb:color4:#222}
+border-color = ${xrdb:color5:#222}
 
 padding-left = 5
 padding-right = 5

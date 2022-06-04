@@ -851,8 +851,8 @@ format-background = ${colors.background}
 type = custom/text
 content = "  "
 content-foreground = ${color.foreground}
-click-left = archlinux-logout
-click-right = archlinux-logout
+click-left = ~/.config/bspwm/rofi/bin/powermenu
+click-right = ~/.config/bspwm/rofi/bin/powermenu
 
 
 [module/wall]

@@ -874,10 +874,10 @@ type = custom/text
 
 [module/browser]
 inherit = module/apps
-content = 
+content = 
 content-foreground = ${color.orange}
-click-left = opera &
-click-right = firefox &
+click-left = firefox &
+click-right = brave &
 
 [module/email]
 inherit = module/apps

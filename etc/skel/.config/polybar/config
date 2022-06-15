@@ -851,8 +851,8 @@ format-background = ${colors.background}
 type = custom/text
 content = "  "
 content-foreground = ${color.foreground}
-click-left = ~/.config/bspwm/rofi/bin/powermenu
-click-right = ~/.config/bspwm/rofi/bin/powermenu
+click-left = ~/.config/rofi/bin/powermenu
+click-right = ~/.config/rofi/bin/powermenu
 
 
 [module/wall]

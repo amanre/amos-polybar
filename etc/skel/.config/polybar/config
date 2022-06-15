@@ -115,7 +115,7 @@ font-0 = "Bitstream Vera Sans:style=Roman:size=10;2"
 font-1 = "FontAwesome:size=11;3"
 font-2 = "Noto Sans Mono:size=15;4"
 font-3 = "Bitstream Vera Sans:style=Roman:size=15;4"
-
+font-4 = "Iosevka:size=15;4"
 
 modules-left = jgmenu wall browser email files settings screenshot term ewmh
 modules-center = cpu-graph mpd
@@ -448,9 +448,9 @@ format-prefix = "  "
 [module/jgmenu]
 type = custom/script
 interval = 120
-exec = echo " EOS"
+exec = echo " "
 click-left = "jgmenu_run >/dev/null 2>&1 &"
-click-right = "xfce4-appfinder &"
+click-right = "~/.config/rofi/launchers/colorful/launcher.sh &"
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -797,7 +797,7 @@ format-muted-background = ${colors.background}
 type = custom/script
 interval = 10
 format = <label>
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 ;format-underline = #3EC13F
 format-foreground = ${colors.foreground}
@@ -857,7 +857,7 @@ click-right = ~/.config/rofi/bin/powermenu
 
 [module/wall]
 type = custom/text
-content = PW
+content = 
 content-padding = 1%
 content-background = ${color.background}
 content-foreground = ${color.foreground}
@@ -874,7 +874,7 @@ type = custom/text
 
 [module/browser]
 inherit = module/apps
-content = 
+content = 
 content-foreground = ${color.orange}
 click-left = firefox &
 click-right = brave &

@@ -449,8 +449,8 @@ format-prefix = "  "
 type = custom/script
 interval = 120
 exec = echo " "
-click-left = "jgmenu_run >/dev/null 2>&1 &"
-click-right = "~/.config/rofi/launchers/colorful/launcher.sh &"
+click-right = "jgmenu_run >/dev/null 2>&1 &"
+click-left = "~/.config/rofi/launchers/colorful/launcher.sh &"
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -804,7 +804,6 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 exec = python -u ~/.config/polybar/scripts/weather.py
 tail = true
-
 ################################################################################
 
 [module/xbacklight]

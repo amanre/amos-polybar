@@ -426,7 +426,7 @@ interval = 1000
 label = Updates: %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "賓"
+format-prefix = "賓 "
 format-prefix-foreground = ${colors.foreground}
 
 

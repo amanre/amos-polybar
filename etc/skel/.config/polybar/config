@@ -889,7 +889,7 @@ inherit = module/apps
 content = 
 content-foreground = ${color.blue}
 click-left = thunar &
-click-right = urxvt -e ranger &
+click-right = pcmanfm &
 
 [module/settings]
 inherit = module/apps

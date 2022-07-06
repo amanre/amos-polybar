@@ -448,7 +448,7 @@ format-prefix = "  "
 [module/jgmenu]
 type = custom/script
 interval = 120
-exec = echo " "
+exec = echo " " 
 click-right = "jgmenu_run >/dev/null 2>&1 &"
 click-left = "~/.config/rofi/launchers/colorful/launcher.sh &"
 format-foreground = ${colors.foreground}
@@ -873,7 +873,7 @@ type = custom/text
 
 [module/browser]
 inherit = module/apps
-content = 
+content = 
 content-foreground = ${color.orange}
 click-left = firefox &
 click-right = brave &

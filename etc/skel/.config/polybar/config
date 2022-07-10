@@ -850,8 +850,8 @@ format-background = ${colors.background}
 type = custom/text
 content = "  "
 content-foreground = ${color.foreground}
-click-left = ~/.config/rofi/bin/powermenu
-click-right = ~/.config/rofi/bin/powermenu
+click-left = archlinux-logout
+click-right = archlinux-logout
 
 
 [module/wall]

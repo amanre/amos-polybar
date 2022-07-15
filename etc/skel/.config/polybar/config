@@ -121,13 +121,13 @@ modules-left = jgmenu wall browser discord email files settings screenshot term 
 modules-center = cpu-graph mpd
 modules-right = volume memory1 filesystem arch-aur-updates battery date  weather sysmenu
 
-;tray-detached = false
+tray-detached = false
 ;tray-offset-x = 0
 ;tray-offset-y = 0
-;tray-padding = 2
-;tray-maxsize = 20
-;tray-scale = 1.0
-;tray-position = right
+tray-padding = 2
+tray-maxsize = 20
+tray-scale = 1.0
+tray-position = right
 ;tray-background = ${colors.background}
 
 scroll-up = bspwm-desknext

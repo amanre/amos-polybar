@@ -119,7 +119,7 @@ font-4 = "Iosevka:size=15;4"
 
 modules-left = jgmenu wall browser discord email files settings screenshot term ewmh
 modules-center = cpu-graph mpd
-modules-right = volume memory1 filesystem arch-aur-updates battery date  weather sysmenu
+modules-right = volume memory1 filesystem arch-aur-updates battery date sysmenu
 
 tray-detached = false
 ;tray-offset-x = 0

@@ -81,7 +81,7 @@ offset-x = 10
 offset-y = 10
 #radius =15
 fixed-center = true
-bottom = true
+bottom = false
 separator =
 
 background = ${colors.background}

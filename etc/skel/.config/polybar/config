@@ -74,14 +74,14 @@ volume-max = #bf616a
 
 [bar/mainbar-bspwm]
 monitor = ${env:MONITOR}
-;monitor-fallback = HDMI-1
+monitor-fallback = HDMI-0
 width = 99%
 height = 30
 offset-x = 10
-offset-y = 10
+offset-y = 5
 #radius =15
 fixed-center = true
-bottom = false
+bottom = true
 separator =
 
 background = ${colors.background}
@@ -97,12 +97,12 @@ override-redirect = true
 ; See the Messaging wiki page for more details.
 enable-ipc = true
 
-border-size = 3
+border-size = 2
 ;border-left-size = 0
 ;border-right-size = 0
 ;border-top-size = 0
 ;border-bottom-size = 25
-border-color = ${xrdb:color5:#222}
+border-color = ${xrdb:color4:#222}
 
 padding-left = 5
 padding-right = 5

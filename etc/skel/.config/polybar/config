@@ -883,7 +883,7 @@ inherit = module/apps
 content = 
 content-foreground = ${color.orange}
 click-left = spotify &
-click-right = spotyfi &
+click-right = spotify &
 
 
 [module/email]
@@ -910,8 +910,8 @@ click-right = lxappearance &
 inherit = module/apps
 content = 
 click-left = flameshot gui &
-;; click-right = gnome-screenshot -i &
-click-right = xfce4-screenshooter &
+ click-right = gnome-screenshot -i &
+;;click-right = xfce4-screenshooter &
 
 [module/term]
 inherit = module/apps

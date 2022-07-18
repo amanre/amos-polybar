@@ -117,7 +117,7 @@ font-2 = "Noto Sans Mono:size=15;4"
 font-3 = "Bitstream Vera Sans:style=Roman:size=15;4"
 font-4 = "Iosevka:size=15;4"
 
-modules-left = jgmenu wall browser discord email files settings screenshot term ewmh
+modules-left = jgmenu wall browser spotify discord email files settings screenshot term ewmh
 modules-center = cpu-graph mpd
 modules-right = volume memory1 filesystem arch-aur-updates battery date sysmenu
 
@@ -877,6 +877,14 @@ content = 
 content-foreground = ${color.orange}
 click-left = firefox &
 click-right = brave &
+
+[module/spotify]
+inherit = module/apps
+content = 
+content-foreground = ${color.orange}
+click-left = spotify &
+click-right = spotyfi &
+
 
 [module/email]
 inherit = module/apps
